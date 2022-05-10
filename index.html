@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра "Камень, ножницы, бумага"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Камень, ножницы, бумага</h1>
+    <table id="pics" border="0" width="1500px" height="300px">
+        <tr>
+            <td align="center"><img src="img/paper.png" id="mypic1" alt="" onclick="this.style.border='4px solid rgb(189, 50, 0)';
+                        mypic2.style.borderWidth='0px';
+                        mypic3.style.borderWidth='0px';
+                        picComp.src='img/start.gif';
+                        mypic2.style.visibility='hidden';
+                        mypic3.style.visibility='hidden';
+                        myS=0"></td>
+            <td width="5%"></td>
+            <td align="center"><img src="img/scissors.png" id="mypic2" alt="" onclick="this.style.border='4px solid rgb(189, 50, 0)';
+                        mypic1.style.borderWidth='0px';
+                        mypic3.style.borderWidth='0px';
+                        picComp.src='img/start.gif';
+                        mypic1.style.visibility='hidden';
+                        mypic3.style.visibility='hidden';
+                        myS=1"></td>
+            <td width="5%"></td>
+            <td align="center"><img src="img/stone.png" id="mypic3" alt="" onclick="this.style.border='4px solid rgb(189, 50, 0)';
+                        mypic2.style.borderWidth='0px';
+                        mypic1.style.borderWidth='0px';
+                        picComp.src='img/start.gif';
+                        mypic2.style.visibility='hidden';
+                        mypic1.style.visibility='hidden';
+                        myS=2"></td>
+        </tr>
+    </table>
+    <p align="center"><img src="img/spacer.gif" onclick="startGame();" alt="" width="200px" height="200px" id="picComp"></p>
+<script src="script.js"></script>
+</body>
+
+</html>
